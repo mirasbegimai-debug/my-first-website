@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Аминаның тұсаукесері | 1 жас</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Marck+Script&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #fff8f8;
+    color: #76545b;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.invitation {
+    max-width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 25px 20px 45px;
+    background:
+        radial-gradient(circle at 5% 10%, #f5dce4 0, transparent 20%),
+        radial-gradient(circle at 95% 35%, #f8e5d9 0, transparent 20%),
+        #fffaf8;
+    border: 5px solid #f0d8d9;
+    overflow: hidden;
+}
+
+.top-flower {
+    font-size: 35px;
+    color: #c18b96;
+    margin-top: 8px;
+}
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* Аминаның негізгі суреті */
+
+.photo-frame {
+    width: 230px;
+    height: 290px;
+    margin: 25px auto 15px;
+    padding: 7px;
+    border: 2px solid #d4b078;
+    border-radius: 48% 48% 12px 12px;
+    background: white;
+    box-shadow: 0 5px 20px #d9b8bd55;
+    overflow: hidden;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 48% 48% 8px 8px;
+}
+
+h1 {
+    font-family: 'Marck Script', cursive;
+    font-size: clamp(58px, 14vw, 86px);
+    font-weight: 400;
+    color: #bd8292;
+    margin: 15px 0 0;
+    line-height: 1.2;
+}
+
+.age {
+    font-family: 'Playfair Display', serif;
+    font-size: 76px;
+    color: #c39a68;
+    line-height: 1;
+    margin: 8px 0;
+}
+
+.age-text {
+    font-size: 12px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 100px;
+    height: 1px;
+    background: #d8b4a7;
+    margin: 28px auto;
+}
+
+.message {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    line-height: 1.8;
+    padding: 0 8px;
+}
+
+.message-small {
+    font-size: 13px;
+    line-height: 1.9;
+    color: #92777a;
+    margin: 15px auto;
+    max-width: 390px;
+}
+
+/* Суреттер пойызы */
+
+.gallery-section {
+    margin: 35px -20px;
+    overflow: hidden;
+}
+
+.gallery-title {
+    font-family: 'Marck Script', cursive;
+    font-size: 29px;
+    color: #bd8292;
+    margin: 25px 10px;
+}
+
+.photo-train {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0 20px;
+}
+
+.photo-track {
+    display: flex;
+    width: max-content;
+    gap: 16px;
+    animation: trainMove 32s linear infinite;
+}
+
+.photo-track img {
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid white;
+    outline: 1px solid #d4b078;
+    border-radius: 90px 90px 18px 18px;
+    box-shadow: 0 5px 16px #b98c9440;
+    flex-shrink: 0;
+}
+
+.photo-track:hover {
+    animation-play-state: paused;
+}
+
+.gallery-caption {
+    font-size: 11px;
+    line-height: 1.8;
+    color: #a98982;
+    padding: 0 20px;
+}
+
+@keyframes trainMove {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Той туралы ақпарат */
+
+.flower-decoration {
+    color: #d8aab2;
+    font-size: 23px;
+    letter-spacing: 8px;
+}
+
+.details {
+    background: #ffffffb8;
+    border: 1px solid #ecd7d5;
+    border-radius: 100px 100px 25px 25px;
+    padding: 28px 15px;
+    margin: 28px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #b77c8c;
+    margin-bottom: 15px;
+}
+
+.detail-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a98982;
+    margin-top: 17px;
+}
+
+.detail-value {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #76545b;
+    margin-top: 5px;
+}
+
+.date {
+    font-size: 25px;
+    color: #b77c8c;
+}
+
+.map-button {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 18px;
+    padding: 13px 24px;
+    border: 1px solid #c69aa1;
+    border-radius: 30px;
+    color: #986b77;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: #fffaf8;
+}
+
+.map-button:hover {
+    background: #f7e7e9;
+}
+
+.bottom-message {
+    font-family: 'Marck Script', cursive;
+    font-size: 31px;
+    color: #bd8292;
+    margin-top: 28px;
+}
+
+.footer {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    color: #b69a96;
+}
+
+/* Телефонға бейімдеу */
+
+@media (max-width: 400px) {
+    .invitation {
+        padding: 20px 14px 35px;
+    }
+
+    .photo-frame {
+        width: 200px;
+        height: 260px;
+    }
+
+    .gallery-section {
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+
+    .photo-track img {
+        width: 150px;
+        height: 195px;
+    }
+
+    .message {
+        font-size: 19px;
+    }
+
+    .detail-value {
+        font-size: 18px;
+    }
+}
+
+/* Қозғалысты азайтуды таңдаған адамдарға */
+
+@media (prefers-reduced-motion: reduce) {
+    .photo-track {
+        animation: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+
+    <div class="top-flower">❀</div>
+
+    <div class="small-title">
+        Шақыру билеті
+    </div>
+
+    <!-- АМИНАНЫҢ НЕГІЗГІ СУРЕТІ -->
+    <div class="photo-frame">
+        <img src="amina.jpg" alt="Аминаның суреті">
+    </div>
+
+    <h1>Амина</h1>
+
+    <div class="age">1</div>
+    <div class="age-text">жас</div>
+
+    <div class="divider"></div>
+
+    <div class="message">
+        Кішкентай ханшайымымыздың<br>
+        тұсаукесер тойына<br>
+        шақырамыз!
+    </div>
+
+    <p class="message-small">
+        Өмірге қадам басқан кішкентай Аминамыздың
+        қуанышына ортақтасып, ақ тілектеріңізді
+        арнауға шақырамыз.
+        Қуанышымыздың қадірлі қонағы болыңыз!
+    </p>
+
+    <div class="flower-decoration">✿ ❀ ✿</div>
+
+    <!-- АМИНАНЫҢ 6 СУРЕТІНІҢ ГАЛЕРЕЯСЫ -->
+
+    <div class="gallery-section">
+
+        <div class="gallery-title">
+            ♡ Аминаның тәтті сәттері ♡
+        </div>
+
+        <div class="photo-train">
+
+            <div class="photo-track">
+
+                <img src="amina1.jpg" alt="Аминаның суреті 1">
+                <img src="amina2.jpg" alt="Аминаның суреті 2">
+                <img src="amina3.jpg" alt="Аминаның суреті 3">
+                <img src="amina4.jpg" alt="Аминаның суреті 4">
+                <img src="amina5.jpg" alt="Аминаның суреті 5">
+                <img src="amina6.jpg" alt="Аминаның суреті 6">
+
+                <!-- Қозғалыс үзілмеуі үшін қайталанатын суреттер -->
+
+                <img src="amina1.jpg" alt="" aria-hidden="true">
+                <img src="amina2.jpg" alt="" aria-hidden="true">
+                <img src="amina3.jpg" alt="" aria-hidden="true">
+                <img src="amina4.jpg" alt="" aria-hidden="true">
+                <img src="amina5.jpg" alt="" aria-hidden="true">
+                <img src="amina6.jpg" alt="" aria-hidden="true">
+
+            </div>
+
+        </div>
+
+        <p class="gallery-caption">
+            Кішкентай ханшайымымыздың
+            естен кетпес сәттері ✨
+        </p>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ТОЙДЫҢ МӘЛІМЕТТЕРІ -->
+
+    <div class="details">
+
+        <div class="section-title">
+            Той салтанаты
+        </div>
+
+        <div class="detail-label">Күні</div>
+        <div class="detail-value date">
+            30 қазан 2026 жыл
+        </div>
+
+        <div class="detail-label">Уақыты</div>
+        <div class="detail-value">
+            19:00
+        </div>
+
+        <div class="detail-label">Өтетін орны</div>
+        <div class="detail-value">
+            Veranda мейрамханасы
+        </div>
+
+        <div class="detail-value">
+            Нұрсұлтан Назарбаев көшесі, 34А
+        </div>
+
+        <!-- https://2gis.kz/kyzylorda/geo/70000001062756664/65.525726,44.796530?inv_by=b0d0e52897f74c70943aa357f6a816d4&inv_ts=1792335826 -->
+
+        <a class="map-button"
+           href="https://2gis.kz/"
+           target="_blank"
+           rel="noopener noreferrer">
+            📍 Мекенжайды көру
+        </a>
+
+    </div>
+
+    <div class="message">
+        Сіздерді асыға күтеміз!
+    </div>
+
+    <div class="bottom-message">
+        Ізгі тілекпен,<br>
+        Аминаның отбасы ♡
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="flower-decoration">❀ ✿ ❀</div>
+
+    <div class="footer">
+        AMINA'S FIRST BIRTHDAY
+    </div>
+
+</div>
+
+</body>
+</html>
